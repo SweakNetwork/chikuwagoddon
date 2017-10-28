@@ -35,10 +35,10 @@ ja:
         otp_attempt: 二段階認証コード
         password: パスワード
         setting_auto_play_gif: アニメーションGIFを自動再生する
-        setting_boost_modal: ブーストする前に確認ダイアログを表示する
+        setting_boost_modal: 調理する前に確認ダイアログを表示する
         setting_default_privacy: 投稿の公開範囲
         setting_default_sensitive: メディアを常に閲覧注意としてマークする
-        setting_delete_modal: トゥートを削除する前に確認ダイアログを表示する
+        setting_delete_modal: ちくわを削除する前に確認ダイアログを表示する
         setting_noindex: 検索エンジンによるインデックスを拒否する
         setting_reduce_motion: アニメーションの動きを減らす
         setting_system_font_ui: システムのデフォルトフォントを使う
@@ -56,7 +56,7 @@ ja:
         follow: フォローされた時にメールで通知くわする
         follow_request: フォローリクエストを受けた時にメールで通知くわする
         mention: 返信が来た時にメールで通知くわする
-        reblog: トゥートがブーストされた時にメールで通知くわする
+        reblog: ちくわが調理された時にメールで通知くわする
     'no': いいえ
     required:
       mark: "*"
