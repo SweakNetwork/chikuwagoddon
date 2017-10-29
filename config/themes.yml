@@ -1,3 +1,4 @@
 default: styles/application.scss
-custom: styles/custom.scss
+greentea: styles/greentea.scss
+bluehawaii: styles/bluehawaii.scss
 vivid: styles/vivid.scss

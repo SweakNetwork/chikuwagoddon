@@ -589,6 +589,9 @@ ja:
     title: "%{instance} 利用規約・プライバシーポリシー"
   themes:
     default: Mastodon
+	greentea: 緑茶ちくわ
+	bluehawaii: ブルーハワイちくわ
+	vivid: 狂気
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"

@@ -589,6 +589,9 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     default: Mastodon
+	greentea: Greentea
+	bluehawaii: Blue-Hawaii
+	vivid: Madness
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
