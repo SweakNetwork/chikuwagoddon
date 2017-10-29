@@ -1,9 +1,11 @@
-$ui-base-color: #ffffff;
-$ui-secondary-color: #b89b7f;
-$ui-primary-color: #9d8064;
-$base-border-color: #b27f4c;
-$simple-background-color: #ffffff;
-$primary-text-color: #482715;
+$ui-base-color: #658552; /*BACKGROUND*/
+$ui-secondary-color: #00ff00; /*GREEN-UNUSED*/
+$ui-highlight-color: #bafe54; /*YELLOW*/
+$base-border-color: #00ffff; /*SKYBLUE-UNUSED*/
+$error-value-color: #2d492d; /*ERROR*/
+$valid-value-color: #54885e; /*MATTYA*/
+$base-shadow-color: #ff7900; /*ORANGE*/
+$base-overlay-background: #000000; /*BLACK*/
 
 
 @import 'application';
