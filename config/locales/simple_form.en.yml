@@ -39,10 +39,10 @@ en:
         otp_attempt: Two-factor code
         password: Password
         setting_auto_play_gif: Auto-play animated GIFs
-        setting_boost_modal: Show confirmation dialog before chikuwing
+        setting_boost_modal: Show confirmation dialog before boosting
         setting_default_privacy: Post privacy
         setting_default_sensitive: Always mark media as sensitive
-        setting_delete_modal: Show confirmation dialog before deleting a chikuwa
+        setting_delete_modal: Show confirmation dialog before deleting a toot
         setting_noindex: Opt-out of search engine indexing
         setting_reduce_motion: Reduce motion in animations
         setting_system_font_ui: Use system's default font
@@ -52,15 +52,15 @@ en:
         type: Import type
         username: Username
       interactions:
-        must_be_follower: Block notifichikuwas from non-followers
-        must_be_following: Block notifichikuwas from people you don't follow
+        must_be_follower: Block notifications from non-followers
+        must_be_following: Block notifications from people you don't follow
       notification_emails:
         digest: Send digest e-mails
-        favourite: Send e-mail when someone favourites your chikuwa
+        favourite: Send e-mail when someone favourites your status
         follow: Send e-mail when someone follows you
         follow_request: Send e-mail when someone requests to follow you
         mention: Send e-mail when someone mentions you
-        reblog: Send e-mail when someone cooks your chikuwa
+        reblog: Send e-mail when someone boosts your status
     'no': 'No'
     required:
       mark: "*"

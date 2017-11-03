@@ -1,7 +1,7 @@
 ---
 en:
   about:
-    about_hashtag_html: These are public chikuwas tagged with <strong>#%{hashtag}</strong>. You can interact with them if you have an account anywhere in the fediverse.
+    about_hashtag_html: These are public toots tagged with <strong>#%{hashtag}</strong>. You can interact with them if you have an account anywhere in the fediverse.
     about_mastodon_html: Mastodon is a social network based on open web protocols and free, open-source software. It is decentralized like e-mail.
     about_this: About
     closed_registrations: Registrations are currently closed on this instance. However! You can find a different instance to make an account on and get access to the very same network from there.
@@ -42,8 +42,8 @@ en:
     nothing_here: There is nothing here!
     people_followed_by: People whom %{name} follows
     people_who_follow: People who follow %{name}
-    posts: Chikuwas
-    posts_with_replies: Chikuwas with replies
+    posts: Toots
+    posts_with_replies: Toots with replies
     remote_follow: Remote follow
     reserved_username: The username is reserved
     roles:
@@ -109,7 +109,7 @@ en:
         report: report
         targeted_reports: Reports made about this account
       silence: Silence
-      statuses: Chikuwas
+      statuses: Statuses
       subscribe: Subscribe
       title: Accounts
       undo_silenced: Undo silence
@@ -149,7 +149,7 @@ en:
         create: Create block
         hint: The domain block will not prevent creation of account entries in the database, but will retroactively and automatically apply specific moderation methods on those accounts.
         severity:
-          desc_html: "<strong>Silence</strong> will make the account's chikuwas invisible to anyone who isn't following them. <strong>Suspend</strong> will remove all of the account's content, media, and profile data. Use <strong>None</strong> if you just want to reject media files."
+          desc_html: "<strong>Silence</strong> will make the account's posts invisible to anyone who isn't following them. <strong>Suspend</strong> will remove all of the account's content, media, and profile data. Use <strong>None</strong> if you just want to reject media files."
           noop: None
           silence: Silence
           suspend: Suspend
@@ -276,7 +276,7 @@ en:
   application_mailer:
     salutation: "%{name},"
     settings: 'Change e-mail preferences: %{link}'
-    signature: Mastodon notifichikuwas from %{instance}
+    signature: Mastodon notifications from %{instance}
     view: 'View:'
   applications:
     created: Application successfully created
@@ -391,10 +391,10 @@ en:
         one: You have acquired one new follower! Yay!
         other: You have gotten %{count} new followers! Amazing!
       subject:
-        one: "1 new notifichikuwa since your last visit \U0001F418"
-        other: "%{count} new notifichikuwas since your last visit \U0001F418"
+        one: "1 new notification since your last visit \U0001F418"
+        other: "%{count} new notifications since your last visit \U0001F418"
     favourite:
-      body: 'Your chikuwa was favourited by %{name}:'
+      body: 'Your status was favourited by %{name}:'
       subject: "%{name} favourited your status"
     follow:
       body: "%{name} is now following you!"
@@ -406,8 +406,8 @@ en:
       body: 'You were mentioned by %{name} in:'
       subject: You were mentioned by %{name}
     reblog:
-      body: 'Your status was cooked by %{name}:'
-      subject: "%{name} cooked your status"
+      body: 'Your status was boosted by %{name}:'
+      subject: "%{name} boosted your status"
   number:
     human:
       decimal_units:
@@ -430,18 +430,18 @@ en:
     web: Web
   push_notifications:
     favourite:
-      title: "%{name} favourited your chikuwa"
+      title: "%{name} favourited your status"
     follow:
       title: "%{name} is now following you"
     group:
-      title: "%{count} notifichikuwas"
+      title: "%{count} notifications"
     mention:
-      action_boost: Cook
+      action_boost: Boost
       action_expand: Show more
       action_favourite: Favourite
       title: "%{name} mentioned you"
     reblog:
-      title: "%{name} boosted your chikuwa"
+      title: "%{name} boosted your status"
   remote_follow:
     acct: Enter your username@domain you want to follow from
     missing_resource: Could not find the required redirect URL for your account
@@ -495,7 +495,7 @@ en:
     export: Data export
     followers: Authorized followers
     import: Import
-    notifications: Notifichikuwas
+    notifications: Notifications
     preferences: Preferences
     settings: Settings
     two_factor_authentication: Two-factor Authentication
@@ -504,10 +504,10 @@ en:
     open_in_web: Open in web
     over_character_limit: character limit of %{max} exceeded
     pin_errors:
-      limit: Too many chikuwas pinned
-      ownership: Someone else's chikuwa cannot be pinned
-      private: Non-public chikuwa cannot be pinned
-      reblog: A cooked chikuwa cannot be pinned
+      limit: Too many toots pinned
+      ownership: Someone else's toot cannot be pinned
+      private: Non-public toot cannot be pinned
+      reblog: A boost cannot be pinned
     show_more: Show more
     visibilities:
       private: Followers-only
@@ -518,8 +518,8 @@ en:
       unlisted_long: Everyone can see, but not listed on public timelines
   stream_entries:
     click_to_show: Click to show
-    pinned: Pinned chikuwa
-    reblogged: chikuwad
+    pinned: Pinned toot
+    reblogged: boosted
     sensitive_content: Sensitive content
   terms:
     body_html: |
