@@ -617,7 +617,8 @@
   padding-left: 68px;
   position: relative;
   min-height: 48px;
-  border-bottom: 1px solid lighten($ui-base-color, 8%);
+  /*border-bottom: 1px solid lighten($ui-base-color, 8%);*/
+  border-bottom: 1px solid $ui-border-color;
   cursor: default;
 
   @keyframes fade {
@@ -801,8 +802,10 @@
 
 .detailed-status__action-bar {
   background: lighten($ui-base-color, 4%);
-  border-top: 1px solid lighten($ui-base-color, 8%);
-  border-bottom: 1px solid lighten($ui-base-color, 8%);
+  /*border-top: 1px solid lighten($ui-base-color, 8%);
+  border-bottom: 1px solid lighten($ui-base-color, 8%);*/
+  border-top: 1px solid $ui-border-color;
+  border-bottom: 1px solid $ui-border-color;
   display: flex;
   flex-direction: row;
   padding: 10px 0;
@@ -904,7 +907,7 @@
   }
 
   .account__header__content {
-    color: $ui-secondary-color;
+    color: $account-desc-color;
   }
 
   .account__header__display-name {
@@ -952,7 +955,7 @@
 }
 
 .account__header__content {
-  color: $ui-primary-color;
+  color: $account-desc-color;
   font-size: 14px;
   font-weight: 400;
   overflow: hidden;
@@ -2025,7 +2028,9 @@
 }
 
 .autosuggest-account .display-name__account {
-  color: lighten($ui-base-color, 36%);
+  /*color: lighten($ui-base-color, 36%);*/
+  color: $id-color;
+  opacity: 36%;
 }
 
 .character-counter__wrapper {
