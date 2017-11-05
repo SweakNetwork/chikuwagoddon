@@ -108,7 +108,8 @@
 .icon-button {
   display: inline-block;
   padding: 0;
-  color: $ui-base-lighter-color;
+  /*color: $ui-base-lighter-color;*/
+  color: $button-color;
   border: none;
   background: transparent;
   cursor: pointer;
