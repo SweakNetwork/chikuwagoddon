@@ -647,7 +647,7 @@
     }
 
     .status__display-name {
-      color: $ui-base-color;
+      color: $id-color/*$ui-base-color*/;
     }
 
     .display-name {
@@ -696,7 +696,7 @@
 }
 
 .status__display-name {
-  color: $ui-base-lighter-color;
+  color: $id-color;/*$ui-base-lighter-color*/;
 }
 
 .status__info .status__display-name {
