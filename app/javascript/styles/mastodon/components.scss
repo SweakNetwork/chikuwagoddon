@@ -1544,7 +1544,7 @@
 
 .column,
 .drawer {
-  flex: 1 1 auto;
+  flex: 1 1 100%;
   overflow: hidden;
 }
 
@@ -1583,7 +1583,7 @@
 
   .column,
   .drawer {
-    flex: 0 0 auto;
+    flex: 1 1 auto;
     padding: 10px;
     padding-left: 5px;
     padding-right: 5px;
