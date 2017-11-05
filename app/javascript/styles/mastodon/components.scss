@@ -4005,7 +4005,7 @@ button.icon-button.active i.fa-retweet {
       background: transparent;
       padding: 0;
       border: 0;
-      color: $white;
+      color: $button-color/*$white*/;
 
       &:active,
       &:hover,
