@@ -1623,7 +1623,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: lighten($ui-base-color, 13%);
+  background: $ui-drawer-color;/*lighten($ui-base-color, 13%);*/
+  background-image: $drawer-background-image;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left bottom
   box-sizing: border-box;
   padding: 0;
   display: flex;
@@ -2321,7 +2325,7 @@ button.icon-button.active i.fa-retweet {
 }
 
 .column-header__button {
-  background: lighten($ui-base-color, 4%);
+  background: $column-header-color;/*lighten($ui-base-color, 4%);*/
   border: 0;
   color: $ui-primary-color;
   cursor: pointer;
@@ -2334,11 +2338,11 @@ button.icon-button.active i.fa-retweet {
 
   &.active {
     color: $primary-text-color;
-    background: lighten($ui-base-color, 8%);
+    background: lighten($column-header-color,4%);/*lighten($ui-base-color, 8%);*/
 
     &:hover {
       color: $primary-text-color;
-      background: lighten($ui-base-color, 8%);
+      background: lighten($column-header-color,4%);/*lighten($ui-base-color, 8%);*/
     }
   }
 }
