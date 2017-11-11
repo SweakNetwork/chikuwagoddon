@@ -118,12 +118,12 @@
   &:hover,
   &:active,
   &:focus {
-    color: lighten($ui-base-color, 33%);
+    color: lighten($ui-hover-color,33%);/*lighten($ui-base-color, 33%);*/
     transition: color 200ms ease-out;
   }
 
   &.disabled {
-    color: lighten($ui-base-color, 13%);
+    color: lighten($button-color,13%);/*lighten($ui-base-color, 13%);*/
     cursor: default;
   }
 
