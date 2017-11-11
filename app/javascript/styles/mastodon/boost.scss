@@ -1,10 +1,16 @@
 @import 'variables';
 
-@function hex-color($color) {
+/*@function hex-color($color) {
   @if type-of($color) == 'color' {
     $color: str-slice(ie-hex-str($color), 4);
   }
   @return '%00' + unquote($color)
+}*/
+@function hex-color($black) {
+  @if type-of($black) == 'color' {
+    $color: str-slice(ie-hex-str($black), 4);
+  }
+  @return '%23' + unquote($black)
 }
 
 button.icon-button i.fa-retweet {
