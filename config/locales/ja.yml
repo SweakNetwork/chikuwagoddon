@@ -594,7 +594,6 @@ ja:
     greentea: 緑茶ちくわ
     material: ちくわぶ
     vivid: 狂気
-
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"
