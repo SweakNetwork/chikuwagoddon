@@ -691,7 +691,7 @@
 }
 
 .status__relative-time {
-  color: $ui-base-lighter-color;
+  color: $id-color;/*$ui-base-lighter-color;*/
   float: right;
   font-size: 14px;
 }
