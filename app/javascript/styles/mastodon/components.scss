@@ -1625,9 +1625,9 @@
   left: 0;
   background: $ui-drawer-color;/*lighten($ui-base-color, 13%);*/
   background-image: $drawer-background-image;
-  background-repeat: no-repeat;
+  background-repeat: $drawer-background-repeat;
   background-attachment: fixed;
-  background-position: left bottom;
+  background-position: $drawer-background-position;
   box-sizing: border-box;
   padding: 0;
   display: flex;
