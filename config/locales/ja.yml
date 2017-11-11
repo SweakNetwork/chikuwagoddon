@@ -590,9 +590,9 @@ ja:
   themes:
     bluehawaii: ブルーハワイちくわ
     chikuwa: ちくわ
-    chikuwabu: ちくわぶ
     default: Mastodon
     greentea: 緑茶ちくわ
+    material: ちくわぶ
     vivid: 狂気
 
   time:

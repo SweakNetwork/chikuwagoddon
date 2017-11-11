@@ -3,4 +3,4 @@ chikuwa: styles/chikuwa.scss
 greentea: styles/greentea.scss
 bluehawaii: styles/bluehawaii.scss
 vivid: styles/vivid.scss
-chikuwabu: styles/chikuwabu.scss
+chikuwabu: styles/material.scss
