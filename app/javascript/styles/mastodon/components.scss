@@ -1905,7 +1905,7 @@
 }
 
 .column-link {
-  background: lighten($ui-base-color, 8%);
+  background: $column-link-color;/*lighten($ui-base-color, 8%);*/
   color: $primary-text-color;
   display: block;
   font-size: 16px;
@@ -1913,7 +1913,7 @@
   text-decoration: none;
 
   &:hover {
-    background: lighten($ui-base-color, 11%);
+    background: lighten($column-link-color,3%);/*lighten($ui-base-color, 11%);*/
   }
 }
 
@@ -1924,7 +1924,7 @@
 
 .column-subheading {
   background: $ui-base-color;
-  color: $ui-base-lighter-color;
+  color: $id-color;/*$ui-base-lighter-color;*/
   padding: 8px 20px;
   font-size: 12px;
   font-weight: 500;
@@ -2070,7 +2070,7 @@
   }
 
   a {
-    color: $ui-base-lighter-color;
+    color: $id-color;/*$ui-base-lighter-color;*/
   }
 }
 
@@ -2289,7 +2289,7 @@ button.icon-button.active i.fa-retweet {
 .column-header {
   padding: 15px;
   font-size: 16px;
-  background: lighten($ui-base-color, 4%);
+  background: $column-header-color;/*lighten($ui-base-color, 4%);*/
   flex: 0 0 auto;
   cursor: pointer;
   position: relative;
