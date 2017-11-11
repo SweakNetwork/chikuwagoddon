@@ -27,3 +27,11 @@ $ui-base-lighter-color: lighten($ui-base-color, 26%) !default; // Lighter darkes
 $ui-primary-color: $classic-primary-color !default;            // Lighter
 $ui-secondary-color: $classic-secondary-color !default;        // Lightest
 $ui-highlight-color: $classic-highlight-color !default;        // Vibrant
+$account-desc-color: $classic-primary-color !default;
+$id-color: lighten($ui-base-color, 26%) !default;
+$ui-border-color: $white !default;
+$button-color: lighten($ui-base-color, 26%) !default;
+$column-header-color: lighten($ui-base-color, 4%) !default;
+$column-link-color: lighten($ui-base-color, 8%) !default;
+$ui-drawer-color: lighten($ui-base-color, 13%) !default;
+$drawer-background-image: none !default;
