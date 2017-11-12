@@ -561,10 +561,10 @@
   }
 
   .status__content__spoiler-link {
-    background: lighten($ui-base-color, 30%);
+    background: $spoiler-color;/*lighten($ui-base-color, 30%);*/
 
     &:hover {
-      background: lighten($ui-base-color, 33%);
+      background: lighten($spoiler-color, 3%);/*lighten($ui-base-color, 33%);*/
       text-decoration: none;
     }
   }
@@ -653,7 +653,7 @@
 
     .display-name {
       strong {
-        color: $ui-base-color;
+        color: $notification-name-color;/*$ui-base-color;*/
       }
 
       span {
@@ -662,14 +662,14 @@
     }
 
     .status__content {
-      color: $ui-base-color;
+      color: $notification-name-color;/*$ui-base-color;*/
 
       a {
         color: $ui-highlight-color;
       }
 
       a.status__content__spoiler-link {
-        color: $primary-text-color;
+        color: $spoiler-text-color-sub;/*$primary-text-color;*/
         background: $ui-primary-color;
 
         &:hover {
@@ -1150,7 +1150,7 @@
 .muted {
   .status__content p,
   .status__content a {
-    color: $ui-base-lighter-color;
+    color: $notification-color;/*$ui-base-lighter-color;*/
   }
 
   .status__display-name strong {
@@ -1162,7 +1162,7 @@
   }
 
   a.status__content__spoiler-link {
-    background: $ui-base-lighter-color;
+    background:  $spoiler-link-color;/*$ui-base-lighter-color;*/
     color: lighten($ui-base-color, 4%);
 
     &:hover {
@@ -1846,6 +1846,7 @@
 
 .react-toggle--checked .react-toggle-track {
   background-color: $ui-highlight-color;
+  color: $spoiler-text-color-sub; /*Added by Cherno*/
 }
 
 .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
@@ -2930,7 +2931,7 @@ button.icon-button.active i.fa-retweet {
   strong {
     font-weight: 500;
     display: block;
-    color: $ui-base-color;
+    color: $notification-name-color;/*$ui-base-color;*/
   }
 }
 
@@ -3454,7 +3455,7 @@ button.icon-button.active i.fa-retweet {
   }
 
   .column-header {
-    color: $primary-text-color;
+    color: $column-text-color;/*$primary-text-color;*/
   }
 }
 

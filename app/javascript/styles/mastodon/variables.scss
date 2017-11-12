@@ -38,3 +38,8 @@ $drawer-background-image: none !default;
 $drawer-background-position: left bottom !default;
 $drawer-background-repeat: no-repeat !default;
 $button-text-color: $primary-text-color !default;
+$notification-color: $ui-base-lighter-color !default;
+$notification-name-color: $ui-base-color !default;
+$spoiler-color: lighten($ui-base-color, 30%) !default;
+$spoiler-link-color: $ui-base-lighter-color !default;
+$spoiler-text-color-sub: $primary-text-color !default;
