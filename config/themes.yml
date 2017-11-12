@@ -1,4 +1,6 @@
 default: styles/application.scss
+chikuwa: styles/chikuwa.scss
 greentea: styles/greentea.scss
 bluehawaii: styles/bluehawaii.scss
 vivid: styles/vivid.scss
+material: styles/chikuwabu.scss

@@ -35,3 +35,6 @@ $column-header-color: lighten($ui-base-color, 4%) !default;
 $column-link-color: lighten($ui-base-color, 8%) !default;
 $ui-drawer-color: lighten($ui-base-color, 13%) !default;
 $drawer-background-image: none !default;
+$drawer-background-position: left bottom !default;
+$drawer-background-repeat: no-repeat !default;
+$button-text-color: $primary-text-color !default;

@@ -10,7 +10,7 @@
   border: 10px none;
   border-radius: 4px;
   box-sizing: border-box;
-  color: $primary-text-color;
+  color: $button-text-color;
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
@@ -1625,9 +1625,9 @@
   left: 0;
   background: $ui-drawer-color;/*lighten($ui-base-color, 13%);*/
   background-image: $drawer-background-image;
-  background-repeat: no-repeat;
+  background-repeat: $drawer-background-repeat;
   background-attachment: fixed;
-  background-position: left bottom;
+  background-position: $drawer-background-position;
   box-sizing: border-box;
   padding: 0;
   display: flex;
@@ -1747,7 +1747,7 @@
 }
 
 .column-back-button {
-  background: lighten($ui-base-color, 4%);
+  background: lighten($column-header-color, 4%);
   color: $ui-highlight-color;
   cursor: pointer;
   flex: 0 0 auto;
@@ -2955,7 +2955,7 @@ button.icon-button.active i.fa-retweet {
       background: $ui-highlight-color;
 
       .icon-button {
-        color: $primary-text-color;
+        color: $button-text-color;
       }
     }
   }
@@ -3654,7 +3654,7 @@ button.icon-button.active i.fa-retweet {
           &,
           button {
             background: $ui-highlight-color;
-            color: $primary-text-color;
+            color: $button-color;
           }
         }
 
