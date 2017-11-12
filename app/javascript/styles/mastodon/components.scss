@@ -2893,7 +2893,7 @@ button.icon-button.active i.fa-retweet {
 }
 
 .privacy-dropdown__option {
-  color: $ui-base-color;
+  color: $notification-name-color;/*$ui-base-color;*/
   padding: 10px;
   cursor: pointer;
   display: flex;
@@ -2922,6 +2922,7 @@ button.icon-button.active i.fa-retweet {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  color: $notification-name-color;/*Added by Cherno*/
 }
 
 .privacy-dropdown__option__content {
