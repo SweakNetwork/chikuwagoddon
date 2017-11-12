@@ -1162,7 +1162,7 @@
   }
 
   a.status__content__spoiler-link {
-    background:  $spoiler-link-color;/*$ui-base-lighter-color;*/
+    background: $spoiler-link-color;/*$ui-base-lighter-color;*/
     color: lighten($ui-base-color, 4%);
 
     &:hover {
