@@ -1916,7 +1916,7 @@
 }
 
 .column-link {
-  background: $column-link-color;/*lighten($ui-base-color, 8%);*/
+  background: rgba($column-link-color,$components-opacity);/*lighten($ui-base-color, 8%);*/
   color: $primary-text-color;
   display: block;
   font-size: 16px;
@@ -2300,7 +2300,7 @@ button.icon-button.active i.fa-retweet {
 .column-header {
   padding: 15px;
   font-size: 16px;
-  background: $column-header-color;/*lighten($ui-base-color, 4%);*/
+  background: rgba($column-header-color,$components-opacity);/*lighten($ui-base-color, 4%);*/
   flex: 0 0 auto;
   cursor: pointer;
   position: relative;
