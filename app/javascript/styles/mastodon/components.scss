@@ -1553,7 +1553,7 @@
 .drawer {
   flex: 1 1 100%;
   overflow: hidden;
-  opacity: $components-opacity;
+  /*opacity: $components-opacity;*/
 }
 
 @media screen and (min-width: 360px) {
@@ -1632,7 +1632,7 @@
   background-repeat: $drawer-background-repeat;
   background-attachment: fixed;
   background-position: $drawer-background-position;
-  opacity:$components-opacity;
+  /*opacity: $components-opacity;*/
   box-sizing: border-box;
   padding: 0;
   display: flex;
@@ -1660,7 +1660,7 @@
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
-  opacity: $components-opacity;
+  /*opacity: $components-opacity;*/
 
   a {
     transition: background 100ms ease-in;
@@ -1755,7 +1755,7 @@
 .column-back-button {
   background: lighten($column-header-color, 4%);
   color: $ui-highlight-color;
-  opacity:$components-opacity;
+  /*opacity: $components-opacity;*/
   cursor: pointer;
   flex: 0 0 auto;
   font-size: 16px;
@@ -1772,7 +1772,7 @@
 
 .column-header__back-button {
   background: lighten($ui-base-color, 4%);
-  opacity:$components-opacity;
+  /*opacity: $components-opacity;*/
   border: 0;
   font-family: inherit;
   color: $ui-highlight-color;
@@ -2984,7 +2984,7 @@ button.icon-button.active i.fa-retweet {
   font-family: inherit;
   background: $ui-base-color;
   color: $ui-primary-color;
-  opacity: $components-opacity;
+  /*opacity: $components-opacity;*/
   font-size: 14px;
   margin: 0;
 
