@@ -862,7 +862,6 @@
   @include avatar-radius();
   position: relative;
   cursor: pointer;
-  opacity: 1.0!important;
 
   &-inline {
     display: inline-block;
@@ -1056,6 +1055,7 @@
   margin: 0 auto 10px;
   overflow: hidden;
   width: 90px;
+  opacity: 1.0!important;
 }
 
 .account-authorize {
@@ -1513,10 +1513,9 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  opacity: $components-opacity;
 
   > .scrollable {
-    background: $ui-base-color;
+    background: rgba($ui-base-color,$components-opacity);
   }
 }
 
@@ -1555,7 +1554,6 @@
 .drawer {
   flex: 1 1 100%;
   overflow: hidden;
-  /*opacity: $components-opacity;*/
 }
 
 @media screen and (min-width: 360px) {
@@ -1629,12 +1627,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: $ui-drawer-color;/*lighten($ui-base-color, 13%);*/
+  background: rgba($ui-drawer-color,$components-opacity);/*lighten($ui-base-color, 13%);*/
   background-image: $drawer-background-image;
   background-repeat: $drawer-background-repeat;
   background-attachment: fixed;
   background-position: $drawer-background-position;
-  opacity: $components-opacity;
   box-sizing: border-box;
   padding: 0;
   display: flex;
