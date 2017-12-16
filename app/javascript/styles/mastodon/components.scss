@@ -862,6 +862,7 @@
   @include avatar-radius();
   position: relative;
   cursor: pointer;
+  opacity: 1.0!important;
 
   &-inline {
     display: inline-block;
@@ -3801,6 +3802,7 @@ button.icon-button.active i.fa-retweet {
   display: block;
   float: left;
   position: relative;
+  opacity: 1.0!important;
 
   &.standalone {
     .media-gallery__item-gifv-thumbnail {
