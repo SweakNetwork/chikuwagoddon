@@ -2639,6 +2639,7 @@ button.icon-button.active i.fa-retweet {
 .empty-column-indicator,
 .error-column {
   color: lighten($ui-base-color, 20%);
+  opacity: $components-opacity;
   background: $ui-base-color;
   text-align: center;
   padding: 20px;
