@@ -12,5 +12,12 @@ $button-color: #828282;
 $column-header-color: #da4b48;
 $ui-drawer-color: #ffffff;
 $button-text-color: #ffffff;
+$notification-color: lighten($primary-text-color, 3%);
+$notification-name-color: lighten($primary-text-color, 3%);
+$spoiler-color: #5779c4;
+$spoiler-link-color: #5779c4;
+$spoiler-text-color-sub: #ffffff;
+$column-text-color: #ffffff;
+$input-color: #2e2e2e;
 
 @import 'application';
