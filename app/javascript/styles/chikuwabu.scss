@@ -1,0 +1,23 @@
+$ui-base-color: #ffffff;
+$ui-secondary-color: #5779c4;
+$ui-primary-color: #5c5c5c;
+$ui-highlight-color: #5779c4;
+$simple-background-color: #f5f5f5;
+$primary-text-color: #2e2e2e;
+$base-overlay-background: #000000;
+$account-desc-color: #858585;
+$id-color: #bababa;
+$ui-border-color: #000000;
+$button-color: #828282;
+$column-header-color: #da4b48;
+$ui-drawer-color: #ffffff;
+$button-text-color: #ffffff;
+$notification-color: lighten($primary-text-color, 3%);
+$notification-name-color: lighten($primary-text-color, 3%);
+$spoiler-color: #5779c4;
+$spoiler-link-color: #5779c4;
+$spoiler-text-color-sub: #ffffff;
+$column-text-color: #ffffff;
+$input-color: #2e2e2e;
+
+@import 'application';

@@ -8,7 +8,7 @@
   border: 10px none;
   border-radius: 4px;
   box-sizing: border-box;
-  color: $primary-text-color;
+  color: $button-text-color;
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
@@ -117,7 +117,8 @@
 .icon-button {
   display: inline-block;
   padding: 0;
-  color: $ui-base-lighter-color;
+  /*color: $ui-base-lighter-color;*/
+  color: $button-color;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -126,12 +127,12 @@
   &:hover,
   &:active,
   &:focus {
-    color: lighten($ui-base-color, 33%);
+    color: lighten($button-color, 33%);/*lighten($ui-base-color, 33%);*/
     transition: color 200ms ease-out;
   }
 
   &.disabled {
-    color: lighten($ui-base-color, 13%);
+    color: lighten($button-color, 13%);/*lighten($ui-base-color, 13%);*/
     cursor: default;
   }
 
@@ -699,10 +700,10 @@
   }
 
   .status__content__spoiler-link {
-    background: lighten($ui-base-color, 30%);
+    background: $spoiler-color;/*lighten($ui-base-color, 30%);*/
 
     &:hover {
-      background: lighten($ui-base-color, 33%);
+      background: lighten($spoiler-color, 3%);/*lighten($ui-base-color, 33%);*/
       text-decoration: none;
     }
   }
@@ -761,7 +762,8 @@
   padding-left: 68px;
   position: relative;
   min-height: 48px;
-  border-bottom: 1px solid lighten($ui-base-color, 8%);
+  /*border-bottom: 1px solid lighten($ui-base-color, 8%);*/
+  border-bottom: 1px solid rgba($ui-border-color, 0.08);
   cursor: default;
 
   @supports (-ms-overflow-style: -ms-autohiding-scrollbar) {
@@ -796,12 +798,12 @@
     }
 
     .status__display-name {
-      color: $ui-base-color;
+      color: $id-color/*$ui-base-color*/;
     }
 
     .display-name {
       strong {
-        color: $ui-base-color;
+        color: $notification-name-color;/*$ui-base-color;*/
       }
 
       span {
@@ -810,14 +812,14 @@
     }
 
     .status__content {
-      color: $ui-base-color;
+      color: $notification-name-color;/*$ui-base-color;*/
 
       a {
         color: $ui-highlight-color;
       }
 
       a.status__content__spoiler-link {
-        color: $primary-text-color;
+        color: $spoiler-text-color-sub;/*$primary-text-color;*/
         background: $ui-primary-color;
 
         &:hover {
@@ -839,13 +841,13 @@
 }
 
 .status__relative-time {
-  color: $ui-base-lighter-color;
+  color: $id-color;/*$ui-base-lighter-color;*/
   float: right;
   font-size: 14px;
 }
 
 .status__display-name {
-  color: $ui-base-lighter-color;
+  color: $id-color;/*$ui-base-lighter-color*/;
 }
 
 .status__info .status__display-name {
@@ -957,8 +959,10 @@
 
 .detailed-status__action-bar {
   background: lighten($ui-base-color, 4%);
-  border-top: 1px solid lighten($ui-base-color, 8%);
-  border-bottom: 1px solid lighten($ui-base-color, 8%);
+  /*border-top: 1px solid lighten($ui-base-color, 8%);
+  border-bottom: 1px solid lighten($ui-base-color, 8%);*/
+  border-top: 1px solid rgba($ui-border-color, 0.08);
+  border-bottom: 1px solid rgba($ui-border-color, 0.08);
   display: flex;
   flex-direction: row;
   padding: 10px 0;
@@ -1073,7 +1077,7 @@
   }
 
   .account__header__content {
-    color: $ui-secondary-color;
+    color: $account-desc-color;
   }
 
   .account__header__display-name {
@@ -1127,7 +1131,7 @@
 }
 
 .account__header__content {
-  color: $ui-primary-color;
+  color: $account-desc-color;
   font-size: 14px;
   font-weight: 400;
   overflow: hidden;
@@ -1232,6 +1236,7 @@
   margin: 0 auto 10px;
   overflow: hidden;
   width: 90px;
+  opacity: 1.0!important;
 }
 
 .account-authorize {
@@ -1327,7 +1332,7 @@
 .muted {
   .status__content p,
   .status__content a {
-    color: $ui-base-lighter-color;
+    color: $notification-color;/*$ui-base-lighter-color;*/
   }
 
   .status__display-name strong {
@@ -1339,7 +1344,7 @@
   }
 
   a.status__content__spoiler-link {
-    background: $ui-base-lighter-color;
+    background: $spoiler-link-color;/*$ui-base-lighter-color;*/
     color: lighten($ui-base-color, 4%);
 
     &:hover {
@@ -1699,7 +1704,7 @@
   flex-direction: column;
 
   > .scrollable {
-    background: $ui-base-color;
+    background: rgba($ui-base-color,$components-opacity);
   }
 }
 
@@ -1710,6 +1715,9 @@
   width: 100%;
   height: 100%;
   background: darken($ui-base-color, 7%);
+  background-image: $ui-background-image;
+  background-position: $ui-background-position;
+  background-repeat: $ui-background-repeat;
 }
 
 .drawer {
@@ -1772,7 +1780,7 @@
 
   .column,
   .drawer {
-    flex: 0 0 auto;
+    flex: 1 1 auto;
     padding: 10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -1808,7 +1816,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: lighten($ui-base-color, 13%);
+  background: rgba($ui-drawer-color,$components-opacity);/*lighten($ui-base-color, 13%);*/
+  background-image: $drawer-background-image;
+  background-repeat: $drawer-background-repeat;
+  background-attachment: fixed;
+  background-position: $drawer-background-position;
   box-sizing: border-box;
   padding: 0;
   display: flex;
@@ -1850,6 +1862,7 @@
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
+  opacity: $components-opacity;
 
   a {
     transition: background 100ms ease-in;
@@ -1941,8 +1954,9 @@
 }
 
 .column-back-button {
-  background: lighten($ui-base-color, 4%);
+  background: lighten($column-header-color, 4%);
   color: $ui-highlight-color;
+  opacity: $components-opacity;
   cursor: pointer;
   flex: 0 0 auto;
   font-size: 16px;
@@ -2040,6 +2054,7 @@
 
 .react-toggle--checked .react-toggle-track {
   background-color: $ui-highlight-color;
+  color: $spoiler-text-color-sub; /*Added by Cherno*/
 }
 
 .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
@@ -2103,7 +2118,7 @@
 }
 
 .column-link {
-  background: lighten($ui-base-color, 8%);
+  background: rgba($column-link-color,$components-opacity);/*lighten($ui-base-color, 8%);*/
   color: $primary-text-color;
   display: block;
   font-size: 16px;
@@ -2111,7 +2126,7 @@
   text-decoration: none;
 
   &:hover {
-    background: lighten($ui-base-color, 11%);
+    background: lighten($column-link-color,3%);/*lighten($ui-base-color, 11%);*/
   }
 }
 
@@ -2133,7 +2148,7 @@
 
 .column-subheading {
   background: $ui-base-color;
-  color: $ui-base-lighter-color;
+  color: $id-color;/*$ui-base-lighter-color;*/
   padding: 8px 20px;
   font-size: 12px;
   font-weight: 500;
@@ -2160,7 +2175,7 @@
   }
 
   a {
-    color: $ui-base-lighter-color;
+    color: $id-color;/*$ui-base-lighter-color;*/
   }
 }
 
@@ -2226,6 +2241,7 @@
   transition-duration: 0s;
   vertical-align: middle;
   width: 22px;
+  color: $button-color;
 
   &::before {
     display: none !important;
@@ -2485,7 +2501,7 @@ a.status-card {
 .column-header {
   display: flex;
   font-size: 16px;
-  background: lighten($ui-base-color, 4%);
+  background: rgba($column-header-color,$components-opacity);/*lighten($ui-base-color, 4%);*/
   flex: 0 0 auto;
   cursor: pointer;
   position: relative;
@@ -2532,7 +2548,7 @@ a.status-card {
 }
 
 .column-header__button {
-  background: lighten($ui-base-color, 4%);
+  background: $column-header-color;/*lighten($ui-base-color, 4%);*/
   border: 0;
   color: $ui-primary-color;
   cursor: pointer;
@@ -2545,11 +2561,11 @@ a.status-card {
 
   &.active {
     color: $primary-text-color;
-    background: lighten($ui-base-color, 8%);
+    background: lighten($column-header-color,4%);/*lighten($ui-base-color, 8%);*/
 
     &:hover {
       color: $primary-text-color;
-      background: lighten($ui-base-color, 8%);
+      background: lighten($column-header-color,4%);/*lighten($ui-base-color, 8%);*/
     }
   }
 }
@@ -2851,6 +2867,7 @@ a.status-card {
 .empty-column-indicator,
 .error-column {
   color: lighten($ui-base-color, 20%);
+  opacity: $components-opacity;
   background: $ui-base-color;
   text-align: center;
   padding: 20px;
@@ -3150,7 +3167,7 @@ a.status-card {
 }
 
 .privacy-dropdown__option {
-  color: $ui-base-color;
+  color: $notification-name-color;/*$ui-base-color;*/
   padding: 10px;
   cursor: pointer;
   display: flex;
@@ -3179,6 +3196,7 @@ a.status-card {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  color: $notification-name-color;/*Added by Cherno*/
 }
 
 .privacy-dropdown__option__content {
@@ -3188,7 +3206,7 @@ a.status-card {
   strong {
     font-weight: 500;
     display: block;
-    color: $ui-base-color;
+    color: $notification-name-color;/*$ui-base-color;*/
 
     @each $lang in $cjk-langs {
       &:lang(#{$lang}) {
@@ -3212,7 +3230,7 @@ a.status-card {
       background: $ui-highlight-color;
 
       .icon-button {
-        color: $primary-text-color;
+        color: $button-text-color;
       }
     }
   }
@@ -3238,6 +3256,7 @@ a.status-card {
   font-family: inherit;
   background: $ui-base-color;
   color: $ui-primary-color;
+  opacity: $components-opacity;
   font-size: 14px;
   margin: 0;
 
@@ -3801,7 +3820,7 @@ a.status-card {
   }
 
   .column-header {
-    color: $primary-text-color;
+    color: $column-text-color;/*$primary-text-color;*/
   }
 }
 
@@ -4067,7 +4086,7 @@ a.status-card {
           &,
           button {
             background: $ui-highlight-color;
-            color: $primary-text-color;
+            color: $button-color;
           }
         }
 
@@ -4230,6 +4249,7 @@ a.status-card {
   position: relative;
   border-radius: 4px;
   overflow: hidden;
+  opacity: 1.0!important;
 
   &.standalone {
     .media-gallery__item-gifv-thumbnail {
@@ -4461,7 +4481,7 @@ a.status-card {
       padding: 2px 10px;
       font-size: 16px;
       border: 0;
-      color: rgba($white, 0.75);
+      color: $button-color/*$white*/;
 
       &:active,
       &:hover,

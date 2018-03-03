@@ -1,0 +1,27 @@
+$ui-base-color: #ffffff;
+$ui-secondary-color: #dcb371;
+$ui-primary-color: #9c6e40;
+$ui-highlight-color: #b0804f;
+$simple-background-color: #fef0df;
+$primary-text-color: #9c6e40;
+$base-overlay-background: #000000;
+$account-desc-color: #b27f4c;
+$id-color: #e9bf91;
+$ui-border-color: #60320c;
+$button-color: #dcc8b3;
+$column-header-color: #b89b7f;
+$column-link-color: #dcc8b3;
+$ui-drawer-color: #ffffff;
+$drawer-background-image: url('../images/drawer-chikuwa.png');
+$drawer-background-position: left bottom;
+$drawer-background-repeat: repeat-x;
+$button-text-color: #ffffff;
+$notification-color: lighten($primary-text-color, 3%);
+$notification-name-color: lighten($primary-text-color, 3%);
+$spoiler-color: #dcc8b3;
+$spoiler-link-color: #dcc8b3;
+$spoiler-text-color-sub: #ffffff;
+$column-text-color: #ffffff;
+$input-color: #9c6e40;
+
+@import 'application';

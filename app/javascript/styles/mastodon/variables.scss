@@ -30,3 +30,27 @@ $ui-highlight-color: $classic-highlight-color !default;        // Vibrant
 
 // Language codes that uses CJK fonts
 $cjk-langs: ja, ko, zh-CN, zh-HK, zh-TW;
+
+$account-desc-color: $classic-primary-color !default;
+$id-color: lighten($ui-base-color, 26%) !default;
+$ui-border-color: $white !default;
+$button-color: lighten($ui-base-color, 26%) !default;
+$column-header-color: lighten($ui-base-color, 4%) !default;
+$column-link-color: lighten($ui-base-color, 8%) !default;
+$ui-drawer-color: lighten($ui-base-color, 13%) !default;
+$drawer-background-image: none !default;
+$drawer-background-position: left bottom !default;
+$drawer-background-repeat: no-repeat !default;
+$ui-background-image: none !default;
+$ui-background-position: right bottom !default;
+$ui-background-repeat: no-repeat !default;
+$button-text-color: $primary-text-color !default;
+$notification-color: $ui-base-lighter-color !default;
+$notification-name-color: $ui-base-color !default;
+$spoiler-color: lighten($ui-base-color, 30%) !default;
+$spoiler-link-color: $ui-base-lighter-color !default;
+$spoiler-text-color-sub: $primary-text-color !default;
+$column-text-color: $primary-text-color !default;
+$input-color: $ui-base-color !default;
+$components-opacity: 1.0 !default;
+
