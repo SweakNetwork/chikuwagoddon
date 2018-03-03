@@ -622,6 +622,12 @@
   border-bottom: 1px solid rgba($ui-border-color, 0.08);
   cursor: default;
 
+  @supports (-ms-overflow-style: -ms-autohiding-scrollbar) {
+    // Add margin to avoid Edge auto-hiding scrollbar appearing over content.
+    // On Edge 16 this is 16px and Edge <=15 it's 12px, so aim for 16px.
+    padding-right: 26px; // 10px + 16px
+  }
+
   @keyframes fade {
     0% { opacity: 0; }
     100% { opacity: 1; }
