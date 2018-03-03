@@ -7,10 +7,12 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 require_relative '../app/lib/exceptions'
+require_relative '../lib/paperclip/lazy_thumbnail'
 require_relative '../lib/paperclip/gif_transcoder'
 require_relative '../lib/paperclip/video_transcoder'
 require_relative '../lib/mastodon/snowflake'
 require_relative '../lib/mastodon/version'
+require_relative '../lib/devise/ldap_authenticatable'
 
 Dotenv::Railtie.load
 
@@ -18,6 +20,9 @@ require_relative '../lib/mastodon/redis_config'
 
 module Mastodon
   class Application < Rails::Application
+    # Initialize configuration defaults for originally generated Rails version.
+    config.load_defaults 5.1
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -39,9 +44,11 @@ module Mastodon
       :fa,
       :fi,
       :fr,
+      :gl,
       :he,
       :hr,
       :hu,
+      :hy,
       :id,
       :io,
       :it,
@@ -54,6 +61,9 @@ module Mastodon
       :pt,
       :'pt-BR',
       :ru,
+      :sk,
+      :sr,
+      :'sr-Latn',
       :sv,
       :th,
       :tr,

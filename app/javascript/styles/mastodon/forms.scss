@@ -56,6 +56,12 @@ code {
 
   strong {
     font-weight: 500;
+
+    @each $lang in $cjk-langs {
+      &:lang(#{$lang}) {
+        font-weight: 700;
+      }
+    }
   }
 
   .label_input {
@@ -272,6 +278,11 @@ code {
   .actions {
     margin-top: 30px;
     display: flex;
+
+    &.actions--top {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
   }
 
   button,
@@ -395,6 +406,12 @@ code {
 
   strong {
     font-weight: 500;
+
+    @each $lang in $cjk-langs {
+      &:lang(#{$lang}) {
+        font-weight: 700;
+      }
+    }
   }
 
   @media screen and (max-width: 740px) and (min-width: 441px) {
@@ -430,6 +447,12 @@ code {
   strong {
     color: $ui-secondary-color;
     font-weight: 500;
+
+    @each $lang in $cjk-langs {
+      &:lang(#{$lang}) {
+        font-weight: 700;
+      }
+    }
   }
 
   @media screen and (max-width: 740px) and (min-width: 441px) {
@@ -474,6 +497,12 @@ code {
 
     strong {
       font-weight: 500;
+
+      @each $lang in $cjk-langs {
+        &:lang(#{$lang}) {
+          font-weight: 700;
+        }
+      }
     }
   }
 }
@@ -506,6 +535,12 @@ code {
       display: block;
       margin-bottom: 5px;
 
+      @each $lang in $cjk-langs {
+        &:lang(#{$lang}) {
+          font-weight: 700;
+        }
+      }
+
       .fa {
         font-weight: 400;
       }
@@ -536,5 +571,23 @@ code {
 
   div {
     margin-bottom: 4px;
+  }
+}
+
+.alternative-login {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  h4 {
+    font-size: 16px;
+    color: $ui-base-lighter-color;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 0;
+  }
+
+  .button {
+    display: block;
   }
 }

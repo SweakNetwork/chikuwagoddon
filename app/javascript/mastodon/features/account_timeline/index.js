@@ -12,12 +12,15 @@ import ColumnBackButton from '../../components/column_back_button';
 import { List as ImmutableList } from 'immutable';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 
-const mapStateToProps = (state, props) => ({
-  statusIds: state.getIn(['timelines', `account:${props.params.accountId}`, 'items'], ImmutableList()),
-  isLoading: state.getIn(['timelines', `account:${props.params.accountId}`, 'isLoading']),
-  hasMore: !!state.getIn(['timelines', `account:${props.params.accountId}`, 'next']),
-  me: state.getIn(['meta', 'me']),
-});
+const mapStateToProps = (state, { params: { accountId }, withReplies = false }) => {
+  const path = withReplies ? `${accountId}:with_replies` : accountId;
+
+  return {
+    statusIds: state.getIn(['timelines', `account:${path}`, 'items'], ImmutableList()),
+    isLoading: state.getIn(['timelines', `account:${path}`, 'isLoading']),
+    hasMore: !!state.getIn(['timelines', `account:${path}`, 'next']),
+  };
+};
 
 @connect(mapStateToProps)
 export default class AccountTimeline extends ImmutablePureComponent {
@@ -28,29 +31,29 @@ export default class AccountTimeline extends ImmutablePureComponent {
     statusIds: ImmutablePropTypes.list,
     isLoading: PropTypes.bool,
     hasMore: PropTypes.bool,
-    me: PropTypes.string.isRequired,
+    withReplies: PropTypes.bool,
   };
 
   componentWillMount () {
     this.props.dispatch(fetchAccount(this.props.params.accountId));
-    this.props.dispatch(refreshAccountTimeline(this.props.params.accountId));
+    this.props.dispatch(refreshAccountTimeline(this.props.params.accountId, this.props.withReplies));
   }
 
   componentWillReceiveProps (nextProps) {
-    if (nextProps.params.accountId !== this.props.params.accountId && nextProps.params.accountId) {
+    if ((nextProps.params.accountId !== this.props.params.accountId && nextProps.params.accountId) || nextProps.withReplies !== this.props.withReplies) {
       this.props.dispatch(fetchAccount(nextProps.params.accountId));
-      this.props.dispatch(refreshAccountTimeline(nextProps.params.accountId));
+      this.props.dispatch(refreshAccountTimeline(nextProps.params.accountId, nextProps.params.withReplies));
     }
   }
 
   handleScrollToBottom = () => {
     if (!this.props.isLoading && this.props.hasMore) {
-      this.props.dispatch(expandAccountTimeline(this.props.params.accountId));
+      this.props.dispatch(expandAccountTimeline(this.props.params.accountId, this.props.withReplies));
     }
   }
 
   render () {
-    const { statusIds, isLoading, hasMore, me } = this.props;
+    const { statusIds, isLoading, hasMore } = this.props;
 
     if (!statusIds && isLoading) {
       return (
@@ -70,7 +73,6 @@ export default class AccountTimeline extends ImmutablePureComponent {
           statusIds={statusIds}
           isLoading={isLoading}
           hasMore={hasMore}
-          me={me}
           onScrollToBottom={this.handleScrollToBottom}
         />
       </Column>

@@ -1,8 +1,8 @@
 ![Mastodon](https://i.imgur.com/NhZc40l.png)
 ========
 
-[![Build Status](http://img.shields.io/travis/tootsuite/mastodon.svg)][travis]
-[![Code Climate](https://img.shields.io/codeclimate/github/tootsuite/mastodon.svg)][code_climate]
+[![Build Status](https://img.shields.io/travis/tootsuite/mastodon.svg)][travis]
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/tootsuite/mastodon.svg)][code_climate]
 
 [travis]: https://travis-ci.org/tootsuite/mastodon
 [code_climate]: https://codeclimate.com/github/tootsuite/mastodon
@@ -17,9 +17,10 @@ Click on the screenshot below to watch a demo of the UI:
 
 **Ruby on Rails** is used for the back-end, while **React.js** and Redux are used for the dynamic front-end. A static front-end for public resources (profiles and statuses) is also provided.
 
-If you would like, you can [support the development of this project on Patreon][patreon]. Alternatively, you can donate to this BTC address: `17j2g7vpgHhLuXhN4bueZFCvdxxieyRVWd`
+If you would like, you can [support the development of this project on Patreon][patreon] or [Liberapay][liberapay]. Alternatively, you can donate to this BTC address: `17j2g7vpgHhLuXhN4bueZFCvdxxieyRVWd`
 
 [patreon]: https://www.patreon.com/user?u=619786
+[liberapay]: https://liberapay.com/Mastodon/
 
 ---
 
