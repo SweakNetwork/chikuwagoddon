@@ -12,6 +12,7 @@ import {
   unmuteAccount,
 } from '../actions/accounts';
 import { openModal } from '../actions/modal';
+import { initMuteModal } from '../actions/mutes';
 import { unfollowModal } from '../initial_state';
 
 const messages = defineMessages({
@@ -23,7 +24,6 @@ const makeMapStateToProps = () => {
 
   const mapStateToProps = (state, props) => ({
     account: getAccount(state, props.id),
-    me: state.getIn(['meta', 'me']),
   });
 
   return mapStateToProps;
@@ -59,10 +59,14 @@ const mapDispatchToProps = (dispatch, { intl }) => ({
     if (account.getIn(['relationship', 'muting'])) {
       dispatch(unmuteAccount(account.get('id')));
     } else {
-      dispatch(muteAccount(account.get('id')));
+      dispatch(initMuteModal(account));
     }
   },
 
+
+  onMuteNotifications (account, notifications) {
+    dispatch(muteAccount(account.get('id'), notifications));
+  },
 });
 
 export default injectIntl(connect(makeMapStateToProps, mapDispatchToProps)(Account));

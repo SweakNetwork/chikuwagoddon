@@ -23,10 +23,6 @@ import {
   TIMELINE_EXPAND_SUCCESS,
 } from '../actions/timelines';
 import {
-  ACCOUNT_BLOCK_SUCCESS,
-  ACCOUNT_MUTE_SUCCESS,
-} from '../actions/accounts';
-import {
   NOTIFICATIONS_UPDATE,
   NOTIFICATIONS_REFRESH_SUCCESS,
   NOTIFICATIONS_EXPAND_SUCCESS,
@@ -58,7 +54,7 @@ const normalizeStatus = (state, status) => {
     normalStatus.reblog = status.reblog.id;
   }
 
-  const searchContent = [status.spoiler_text, status.content].join('\n\n').replace(/<br \/>/g, '\n').replace(/<\/p><p>/g, '\n\n');
+  const searchContent = [status.spoiler_text, status.content].join('\n\n').replace(/<br\s*\/?>/g, '\n').replace(/<\/p><p>/g, '\n\n');
 
   const emojiMap = normalStatus.emojis.reduce((obj, emoji) => {
     obj[`:${emoji.shortcode}:`] = emoji;
@@ -86,18 +82,6 @@ const deleteStatus = (state, id, references) => {
   });
 
   return state.delete(id);
-};
-
-const filterStatuses = (state, relationship) => {
-  state.forEach(status => {
-    if (status.get('account') !== relationship.id) {
-      return;
-    }
-
-    state = deleteStatus(state, status.get('id'), state.filter(item => item.get('reblog') === status.get('id')));
-  });
-
-  return state;
 };
 
 const initialState = ImmutableMap();
@@ -139,9 +123,6 @@ export default function statuses(state = initialState, action) {
     return normalizeStatuses(state, action.statuses);
   case TIMELINE_DELETE:
     return deleteStatus(state, action.id, action.references);
-  case ACCOUNT_BLOCK_SUCCESS:
-  case ACCOUNT_MUTE_SUCCESS:
-    return filterStatuses(state, action.relationship);
   default:
     return state;
   }

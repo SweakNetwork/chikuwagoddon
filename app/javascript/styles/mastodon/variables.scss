@@ -27,6 +27,10 @@ $ui-base-lighter-color: lighten($ui-base-color, 26%) !default; // Lighter darkes
 $ui-primary-color: $classic-primary-color !default;            // Lighter
 $ui-secondary-color: $classic-secondary-color !default;        // Lightest
 $ui-highlight-color: $classic-highlight-color !default;        // Vibrant
+
+// Language codes that uses CJK fonts
+$cjk-langs: ja, ko, zh-CN, zh-HK, zh-TW;
+
 $account-desc-color: $classic-primary-color !default;
 $id-color: lighten($ui-base-color, 26%) !default;
 $ui-border-color: $white !default;
@@ -49,3 +53,4 @@ $spoiler-text-color-sub: $primary-text-color !default;
 $column-text-color: $primary-text-color !default;
 $input-color: $ui-base-color !default;
 $components-opacity: 1.0 !default;
+
