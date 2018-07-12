@@ -1,5 +1,6 @@
 default: styles/application.scss
 chikuwa: styles/chikuwa.scss
+contrast: styles/contrast.scss
 greentea: styles/greentea.scss
 bluehawaii: styles/bluehawaii.scss
 vivid: styles/vivid.scss
