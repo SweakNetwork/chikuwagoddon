@@ -42,7 +42,6 @@ $light-text-color: $ui-primary-color !default;
 // Language codes that uses CJK fonts
 $cjk-langs: ja, ko, zh-CN, zh-HK, zh-TW;
 
-<<<<<<< HEAD
 $account-desc-color: $classic-primary-color !default;
 $id-color: lighten($ui-base-color, 26%) !default;
 $ui-border-color: $white !default;
@@ -66,9 +65,7 @@ $column-text-color: $primary-text-color !default;
 $input-color: $ui-base-color !default;
 $components-opacity: 1.0 !default;
 
-=======
 // Variables for components
 $media-modal-media-max-width: 100%;
 // put margins on top and bottom of image to avoid the screen covered by image.
 $media-modal-media-max-height: 80%;
->>>>>>> v2.4.0
