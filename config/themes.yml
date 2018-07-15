@@ -1,7 +1,8 @@
 default: styles/application.scss
 chikuwa: styles/chikuwa.scss
+contrast: styles/contrast.scss
+mastodon-light: styles/mastodon-light.scss
 greentea: styles/greentea.scss
 bluehawaii: styles/bluehawaii.scss
 vivid: styles/vivid.scss
 material: styles/chikuwabu.scss
-nebula: styles/nebula.scss
