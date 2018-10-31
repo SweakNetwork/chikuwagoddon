@@ -69,17 +69,13 @@ ja:
         setting_default_language: 投稿する言語
         setting_default_privacy: 投稿の公開範囲
         setting_default_sensitive: メディアを常に閲覧注意としてマークする
-<<<<<<< HEAD
         setting_delete_modal: ちくわを削除する前に確認ダイアログを表示する
         setting_display_sensitive_media: 閲覧注意としてマークされたメディアも常に表示する
-=======
-        setting_delete_modal: トゥートを削除する前に確認ダイアログを表示する
         setting_display_media: メディアの表示
         setting_display_media_default: 標準
         setting_display_media_hide_all: 非表示
         setting_display_media_show_all: 表示
-        setting_expand_spoilers: 閲覧注意としてマークされたトゥートを常に展開する
->>>>>>> ba06a5f485d305bc917506828fd5cb20b3f0c226
+        setting_expand_spoilers: 閲覧注意としてマークされたちくわを常に展開する
         setting_hide_network: 繋がりを隠す
         setting_noindex: 検索エンジンによるインデックスを拒否する
         setting_reduce_motion: アニメーションの動きを減らす
@@ -96,22 +92,13 @@ ja:
         must_be_following: フォローしていないユーザーからの通知くわをブロック
         must_be_following_dm: フォローしていないユーザーからのダイレクトメッセージをブロック
       notification_emails:
-<<<<<<< HEAD
         digest: タイムラインからピックアップしてメールで通知くわする
         favourite: お気に入りに登録された時にメールで通知くわする
         follow: フォローされた時にメールで通知くわする
         follow_request: フォローリクエストを受けた時にメールで通知くわする
         mention: 返信が来た時にメールで通知くわする
         reblog: ちくわが調理された時にメールで通知くわする
-=======
-        digest: タイムラインからピックアップしてメールで通知する
-        favourite: お気に入りに登録された時にメールで通知する
-        follow: フォローされた時にメールで通知する
-        follow_request: フォローリクエストを受けた時にメールで通知する
-        mention: 返信が来た時にメールで通知する
-        reblog: トゥートがブーストされた時にメールで通知する
-        report: 通報を受けた時にメールで通知する
->>>>>>> ba06a5f485d305bc917506828fd5cb20b3f0c226
+        report: 通報を受けた時にメールで通知くわする
     'no': いいえ
     required:
       mark: "*"
