@@ -157,8 +157,8 @@ ja:
         report: レポート
         targeted_reports: このアカウントについてのレポート
       silence: サイレンス
-      statuses: ちくわの本数
       silenced: サイレンス済み
+      statuses: ちくわの本数
       subscribe: 購読する
       suspended: 停止済み
       title: アカウント
@@ -307,9 +307,8 @@ ja:
       title: 招待
     relays:
       add_new: リレーを追加
-      description_html: "<strong>連合リレー</strong>とは、登録しているサーバー間の公開ちくわを仲介するサーバーです。<strong>中小規模のサーバーが連合のコンテンツを見つけるのを助けます。</strong>これを使用しない場合、ローカルユーザーがリモートユーザーを手動でフォローする必要があります。"
-      enable_hint: 有効にすると、リレーから全ての公開ちくわを受信するようになり、またこのサーバーの全ての公開ちくわをリレーに送信するようになります。
       delete: 削除
+      description_html: "<strong>連合リレー</strong>とは、登録しているサーバー間の公開ちくわを仲介するサーバーです。<strong>中小規模のサーバーが連合のコンテンツを見つけるのを助けます。</strong>これを使用しない場合、ローカルユーザーがリモートユーザーを手動でフォローする必要があります。"
       disable: 無効化
       disabled: 無効
       enable: 有効化

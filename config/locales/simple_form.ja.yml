@@ -16,10 +16,10 @@ ja:
         locale: ユーザーインターフェース、メールやプッシュ通知くわの言語
         locked: フォロワーを手動で承認する必要があります
         note: あと<span class="note-counter">%{count}</span>文字入力できます。
+        password: 少なくとも8文字は入力してください
         phrase: ちくわの大文字小文字や閲覧注意に関係なく一致
         scopes: アプリの API に許可するアクセス権を選択してください。最上位のスコープを選択する場合、個々のスコープを選択する必要はありません。
         setting_default_language: ちくわの言語は自動的に検出されますが、必ずしも正確とは限りません
-        password: 少なくとも8文字は入力してください
         setting_display_media_default: 閲覧注意としてマークされたメディアは隠す
         setting_display_media_hide_all: 全てのメディアを常に隠す
         setting_display_media_show_all: 閲覧注意としてマークされたメディアも常に表示する
@@ -70,11 +70,11 @@ ja:
         setting_default_privacy: 投稿の公開範囲
         setting_default_sensitive: メディアを常に閲覧注意としてマークする
         setting_delete_modal: ちくわを削除する前に確認ダイアログを表示する
-        setting_display_sensitive_media: 閲覧注意としてマークされたメディアも常に表示する
         setting_display_media: メディアの表示
         setting_display_media_default: 標準
         setting_display_media_hide_all: 非表示
         setting_display_media_show_all: 表示
+        setting_display_sensitive_media: 閲覧注意としてマークされたメディアも常に表示する
         setting_expand_spoilers: 閲覧注意としてマークされたちくわを常に展開する
         setting_hide_network: 繋がりを隠す
         setting_noindex: 検索エンジンによるインデックスを拒否する
