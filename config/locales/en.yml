@@ -930,10 +930,10 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     bluehawaii: Blue-Hawaii
-    contrast: High contrast
-    default: Mastodon
+    contrast: Mastodon (High contrast)
+    default: Mastodon (Dark)
     greentea: Greentea
-    mastodon-light: Mastodon (light)
+    mastodon-light: Mastodon (Light)
     vivid: Madness
   time:
     formats:
