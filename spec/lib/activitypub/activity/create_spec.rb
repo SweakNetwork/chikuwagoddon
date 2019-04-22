@@ -522,11 +522,13 @@ RSpec.describe ActivityPub::Activity::Create do
         }
       end
 
-      subject { described_class.new(json, sender, delivery: true) }
+      it 'creates status' do
+        status = sender.statuses.first
 
         expect(status).to_not be_nil
         expect(status.text).to eq 'Lorem ipsum'
       end
+    end
 
     context 'when sender replies to local status' do
       let!(:local_status) { Fabricate(:status) }
@@ -546,11 +548,13 @@ RSpec.describe ActivityPub::Activity::Create do
         }
       end
 
-      subject { described_class.new(json, sender, delivery: true) }
+      it 'creates status' do
+        status = sender.statuses.first
 
         expect(status).to_not be_nil
         expect(status.text).to eq 'Lorem ipsum'
       end
+    end
 
     context 'when sender targets a local user' do
       let!(:local_account) { Fabricate(:account) }
