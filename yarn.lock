@@ -891,6 +891,19 @@
   resolved "https://registry.yarnpkg.com/@emotion/utils/-/utils-0.8.2.tgz#576ff7fb1230185b619a75d258cbc98f0867a8dc"
   integrity sha512-rLu3wcBWH4P5q1CGoSSH/i9hrXs7SlbRLkoq9IGuoPYNGQvDJ3pt/wmOM+XgYjIDRMVIdkUWt0RsfzF50JfnCw==
 
+"@formatjs/intl-unified-numberformat@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-unified-numberformat/-/intl-unified-numberformat-3.0.2.tgz#0485443ab4b4c8d6a2a7fc48dc88fad75da9b18c"
+  integrity sha512-C5Qtykibb334YtxiaTi12Pax5uMYOqbQwcXdFzzgJeHSV5mA19RJYuOQ4yO/vBCg24UkQAYBbXtkAR2hXhEThQ==
+  dependencies:
+    "@formatjs/intl-utils" "^2.0.2"
+    unicode-12.1.0 "0.8"
+
+"@formatjs/intl-utils@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.0.2.tgz#5861bc4be8cdd06484a713122026d1e4065849eb"
+  integrity sha512-FpMVkOKg73soaA019turLO3kCPW9CbIViYgyUtR4uyNvJS9wH1QCbdPIcjDMskjIzQV+FG3+hW1VvrI8begmKQ==
+
 "@jest/console@^24.7.1":
   version "24.7.1"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.7.1.tgz#32a9e42535a97aedfe037e725bd67e954b459545"
@@ -5286,6 +5299,11 @@ intl-format-cache@^2.0.5:
   resolved "https://registry.yarnpkg.com/intl-format-cache/-/intl-format-cache-2.1.0.tgz#04a369fecbfad6da6005bae1f14333332dcf9316"
   integrity sha1-BKNp/sv61tpgBbrh8UMzMy3PkxY=
 
+intl-format-cache@^4.2.17:
+  version "4.2.17"
+  resolved "https://registry.yarnpkg.com/intl-format-cache/-/intl-format-cache-4.2.17.tgz#e63150f73558adab004c21f0075e437ea9e0468a"
+  integrity sha512-d9CQrsTqMZOJqlwQ3qr4YVIyUVB4C1Z1yETiZDaYcK61EFzXgi401SNdjlYRNpLpz0V/VL5OAPtnqhrsyyWeFA==
+
 intl-messageformat-parser@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-1.4.0.tgz#b43d45a97468cadbe44331d74bb1e8dea44fc075"
@@ -5296,12 +5314,27 @@ intl-messageformat-parser@^1.6.5:
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-1.6.5.tgz#40f5fc19855f203389a3fc926cc3c88d7a573496"
   integrity sha512-hngOkdq6FZxT6iEpEqOzGO/8rshM/v+sShGBl6yv8SQmU6lCc4vtfBHNqpSC0Dxuq4tedMkYFQGnKy5b1Tx5GA==
 
-intl-messageformat@^2.0.0, intl-messageformat@^2.1.0, intl-messageformat@^2.2.0:
+intl-messageformat-parser@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-3.6.0.tgz#acd98e27ef1e62e684ca8f719fc29cc667390884"
+  integrity sha512-vSNH4J7SgdsuULhgI4LFSc9G7I+1aQiIyUs4mRrhhsav9u+t0kICBGj7tfFaEw9uSfeZF1wqHajssV+K4qYWOA==
+  dependencies:
+    "@formatjs/intl-unified-numberformat" "^3.0.2"
+
+intl-messageformat@^2.0.0, intl-messageformat@^2.1.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-2.2.0.tgz#345bcd46de630b7683330c2e52177ff5eab484fc"
   integrity sha1-NFvNRt5jC3aDMwwuUhd/9eq0hPw=
   dependencies:
     intl-messageformat-parser "1.4.0"
+
+intl-messageformat@^7.8.0:
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-7.8.0.tgz#a966d0bf9078329a5f0edb630f5e2cb67226ec18"
+  integrity sha512-QFoUCOVjnSqhp8QuiFj0raxAJ/ewZKgijPrLZogWfs5c6PbbJzpoNM5W6w3siky89/z/qIH4NAj4aZnYI7K9qg==
+  dependencies:
+    intl-format-cache "^4.2.17"
+    intl-messageformat-parser "^3.6.0"
 
 intl-relativeformat@^2.1.0:
   version "2.2.0"
@@ -10340,6 +10373,11 @@ uglify-js@^3.1.4:
   dependencies:
     commander "~2.20.0"
     source-map "~0.6.1"
+
+unicode-12.1.0@0.8:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/unicode-12.1.0/-/unicode-12.1.0-0.8.0.tgz#260f6dd899eefd42a8eae550bcbb62654c90c79d"
+  integrity sha512-OhxidkE3tKlMAouqWtdYtDP2RHVIo1lNdjEruNdVxLrACcbw79TaOcupYKxz6F7ldC1nx8CDygzN5kGmXAU60Q==
 
 unicode-astral-regex@^1.0.1:
   version "1.0.1"
